@@ -36,6 +36,16 @@ Documentation](https://lcrawlab.github.io/sme/).
 
 ## Installation
 
+### Installation from CRAN
+
+You can install the latest release from CRAN
+
+```
+install.packages("smer")
+```
+
+### Installation from source
+
 You can install the development version of `smer` from
 [GitHub](https://github.com/) with:
 
@@ -84,6 +94,8 @@ To enable openMP, it may be necessary to configure the compiler flags
 | Linux  | `-fopenmp -lomp`         |
 
 ## Known Issues
+
+If the error is `ld: library "crypto" not found`, install `openssl` (e.g. `brew install openssl`).
 
 Compiling the package requires the compiler to find the libraries for
 the dependencies. For unix systems, the libraries are typically
